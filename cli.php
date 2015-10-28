@@ -20,7 +20,7 @@ if ( theme_check_active() ) {
 /**
  * Implements example command.
  */
-class Example_Command extends WP_CLI_Command {
+class ThemeCheckCli extends WP_CLI_Command {
 
     function __construct() {
         parent::__construct();
@@ -106,4 +106,4 @@ class Example_Command extends WP_CLI_Command {
     }
 }
 
-WP_CLI::add_command( 'theme-check', 'Example_Command' );
+WP_CLI::add_command( 'theme test', 'ThemeCheckCli' );
