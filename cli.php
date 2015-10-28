@@ -48,10 +48,6 @@ class ThemeCheckCli extends WP_CLI_Command {
         $files = $theme->get_files( null, -1 );
         $css = $php = $other = array();
 
-        if ( themeforest_check_active() && $assoc_args['disable-themeforest'] == true ) {
-
-        }
-
         if ( $files ) {
             foreach( $files as $key => $filename ) {
                 if ( substr( $filename, -4 ) == '.php' ) {
