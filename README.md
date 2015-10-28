@@ -6,3 +6,6 @@ For instructions on installing this, and other, WP-CLI community packages, read 
 
 # Usage
 `` wp theme test check <theme-name> ``
+
+## Credits
+https://github.com/ryelle/theme-check for idea and some code :)
